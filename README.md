@@ -1,4 +1,6 @@
 # EventBehavoirTree
+1. Added message function to behavior tree.
+2. Mix Behavior tree And Finite state machine.
 
 Install
 -------
