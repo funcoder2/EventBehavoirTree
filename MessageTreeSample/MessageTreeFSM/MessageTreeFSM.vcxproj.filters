@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MessageTreeFSMSource">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="MessageTreeFSMSource\PageFSM">
+      <UniqueIdentifier>{9803411b-67ca-43e0-ae61-ad15ed7fb3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeFSMSource\BaseBehaviorTree">
+      <UniqueIdentifier>{aa5a2118-204f-4a95-96b0-7f88855eec56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeFSMSource\CustomBehaviorTree">
+      <UniqueIdentifier>{cb5d369f-bdc7-4b67-8f0b-bf9becf1bab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeFSMSource\Message">
+      <UniqueIdentifier>{39349102-7b56-4581-b6ec-888acd9e3c35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeFSMSource\Etc">
+      <UniqueIdentifier>{324b23fc-681f-4878-9b51-c363168d2460}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>MessageTreeFSMSource</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MessageTreeFSMSource</Filter>
+    </ClInclude>
+    <ClInclude Include="Page.h">
+      <Filter>MessageTreeFSMSource\PageFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="PageFSM.h">
+      <Filter>MessageTreeFSMSource\PageFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="NextPageAction.h">
+      <Filter>MessageTreeFSMSource\PageFSM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\BehaviorTree.h">
+      <Filter>MessageTreeFSMSource\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Blackboard.h">
+      <Filter>MessageTreeFSMSource\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Composite.h">
+      <Filter>MessageTreeFSMSource\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Leaf.h">
+      <Filter>MessageTreeFSMSource\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Node.h">
+      <Filter>MessageTreeFSMSource\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Action.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Checker.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\AreaInChecker.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\KillCountChecker.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\PollingChecker.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\MessageChecker.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\MessageIdEnum.h">
+      <Filter>MessageTreeFSMSource\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\EventMessage.h">
+      <Filter>MessageTreeFSMSource\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Util.h">
+      <Filter>MessageTreeFSMSource\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\UpdateCountChecker.h">
+      <Filter>MessageTreeFSMSource\CustomBehaviorTree</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MessageTreeFSM.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MessageTreeFSMSource</Filter>
+    </ClCompile>
+    <ClCompile Include="Page.cpp">
+      <Filter>MessageTreeFSMSource\PageFSM</Filter>
+    </ClCompile>
+    <ClCompile Include="PageFSM.cpp">
+      <Filter>MessageTreeFSMSource\PageFSM</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

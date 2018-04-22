@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="MessageTreeSource">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="MessageTreeSource\Share">
+      <UniqueIdentifier>{02fd169d-d318-4ace-bc9d-a9245c4983df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeSource\Share\BaseBehaviorTree">
+      <UniqueIdentifier>{ff8cd02c-f3b0-4a46-b62a-96b847f980c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeSource\Share\CustomBehaviorTree">
+      <UniqueIdentifier>{129020d3-54f0-4c8b-ab13-124442f68dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeSource\Share\Message">
+      <UniqueIdentifier>{af437bad-0d21-4e7d-b44d-dc6c1da863f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MessageTreeSource\Share\Etc">
+      <UniqueIdentifier>{4c427625-6546-46f5-b779-58c2223f84e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>MessageTreeSource</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>MessageTreeSource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\BehaviorTree.h">
+      <Filter>MessageTreeSource\Share\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Blackboard.h">
+      <Filter>MessageTreeSource\Share\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Composite.h">
+      <Filter>MessageTreeSource\Share\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Leaf.h">
+      <Filter>MessageTreeSource\Share\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Node.h">
+      <Filter>MessageTreeSource\Share\BaseBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Action.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Checker.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\AreaInChecker.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\KillCountChecker.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\MessageChecker.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\PollingChecker.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\UpdateCountChecker.h">
+      <Filter>MessageTreeSource\Share\CustomBehaviorTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\MessageIdEnum.h">
+      <Filter>MessageTreeSource\Share\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\EventMessage.h">
+      <Filter>MessageTreeSource\Share\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Share\Util.h">
+      <Filter>MessageTreeSource\Share\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="EventDataFctory.h">
+      <Filter>MessageTreeSource</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MessageTree.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>MessageTreeSource</Filter>
+    </ClCompile>
+    <ClCompile Include="EventDataFctory.cpp">
+      <Filter>MessageTreeSource</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
