@@ -17,7 +17,7 @@ public:
     virtual ~Node() {}
 
     virtual Status update() = 0;
-	virtual Status updateMessage(EventMessage::Ptr message) = 0;
+    virtual Status updateMessage(EventMessage::Ptr message) = 0;
     virtual void initialize() {}
     virtual void terminate(Status s) {}
 
@@ -36,20 +36,20 @@ public:
         return status;
     }
 
-	Status onMessage(EventMessage::Ptr message)
-	{
-		if (status != Status::Running) {
-			initialize();
-		}
+    Status onMessage(EventMessage::Ptr message)
+    {
+        if (status != Status::Running) {
+            initialize();
+        }
 
-		status = updateMessage(message);
+        status = updateMessage(message);
 
-		if (status != Status::Running) {
-			terminate(status);
-		}
+        if (status != Status::Running) {
+            terminate(status);
+        }
 
-		return status;
-	}
+        return status;
+    }
 
     bool isSuccess() const { return status == Status::Success; }
     bool isFailure() const { return status == Status::Failure; }

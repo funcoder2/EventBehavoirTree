@@ -13,7 +13,7 @@ public:
     Leaf(Blackboard::Ptr blackboard) : blackboard(blackboard) {}
     
     virtual Status update() = 0;
-	virtual Status updateMessage(EventMessage::Ptr message) = 0;
+    virtual Status updateMessage(EventMessage::Ptr message) = 0;
 
 protected:
     Blackboard::Ptr blackboard;
